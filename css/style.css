@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../img/2022-03-25_14.15.03.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.modmenu {
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 800px;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid rgb(155, 155, 155);
+    transition: 0.5s ease-in-out;
+ 
+    
+}
+.dis {
+    width: 89%;
+    
+    height: 90%;
+    position: relative;
+    left: 17px;
+    overflow-y: scroll;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-track {
+   background-color: red;
+}
+
+@keyframes huh {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes hehe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.cross {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 730px;
+    cursor: pointer;
+
+    top: 30px;
+}
+.bar {
+    cursor: pointer;
+    background-color: white;
+    height: 3px;
+}
+.bar1 {
+   transform: rotate(45deg);
+    width: 25px;
+    position: relative;
+    top: 3px;
+}
+.bar2 {
+    width: 25px;
+    transform: rotate(315deg);
+}
