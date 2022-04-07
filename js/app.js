@@ -25,9 +25,61 @@ function fun() {
         z.setAttribute("style", "animation: hehe 0.2s ease-in-out; ")
        setTimeout(() => {document.body.removeChild(z)}, 200) 
 }
+
    } }
-  
+  const modArr = [
+   "Freelook",
+   "Snaplook",
+   "Keystrokes",
+   "Block overlay",
+   "Hit color",
+   "Skyblock addons",
+   "Scoreboard",
+   "Hypixel Mods" ,
+   "CPS",
+   "Armor status",
+   "Coordinates",
+   "Potion status",
+   "Potion hud",
+   "Crosshair",
+   "1.7 Visuals",
+   "Toggle Sneak/Sprint",
+   "Ping",
+   "FPS",
+   "Particle multiplier",
+   "Chat",
+   "UHC overlay",
+   "Waypoints",
+   "Motion blur",
+   "World edit CUI",
+   "Scrollable tooltips",
+   "Cooldown",
+   "Direction hud",
+   "Item physics",
+   "Item tracker",
+   "Potion effects",
+   "Replay mod",
+  ]
+  for (let i = 0; i < modArr.length; i++) {
+     var cell = document.createElement("div");
+     cell.setAttribute("class","cell")
+     
+     cell.setAttribute("id",`cell${i}`)
+     cell.innerText = modArr[i];
+     document.querySelector(".dis").appendChild(cell)
+     
+    
+     cell.addEventListener("click", () => {
+      
+         var cellc = document.getElementById(`cell${i}`)
+         cellc.classList.toggle("cellc")
+         
+      }
+     )
+     
+  }
 })
+
 
 
 
